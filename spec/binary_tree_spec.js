@@ -94,7 +94,7 @@ describe("BinTree", function(){
     var binTree = new BinTree(5);
     binTree.insert(3).insert(1).insert(2).insert(6);
       it("should check to see if a node is a leaf", function(){
-        expect(binTree.isLeaf(6)).toBe(true);
+        expect(binTree.right.isLeaf()).toBe(true);
       });
     });
 
